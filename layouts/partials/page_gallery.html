@@ -60,9 +60,9 @@
             {{ end }}
           />
           <meta itemprop="contentUrl" content="{{ $original.RelPermalink }}" />
-          {{ with $.Site.Author }}
+          {{ with $.Site.Params.Author }}
             <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
-              <meta itemprop="name" content="{{ $.Site.Author.name }}" />
+              <meta itemprop="name" content="{{ $.Site.Params.Author.name }}" />
             </span>
           {{ end }}
         </a>
